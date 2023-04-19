@@ -20,7 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let nav = UINavigationController(rootViewController: ViewController())
+        let vc = ToDoListViewController()
+        vc.navigationItem.backButtonTitle = ""
+        let nav = UINavigationController(rootViewController: vc)
         window.rootViewController = nav
         window.makeKeyAndVisible()
         self.window = window

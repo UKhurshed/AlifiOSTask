@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32436D4C069D5E3507FAF1A /* Pods_AlifiOSTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */; };
 		D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ABC29EFE1C6009CB2FA /* AppDelegate.swift */; };
 		D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ABE29EFE1C6009CB2FA /* SceneDelegate.swift */; };
-		D3631AC129EFE1C6009CB2FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AC029EFE1C6009CB2FA /* ViewController.swift */; };
 		D3631AC629EFE1C7009CB2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3631AC529EFE1C7009CB2FA /* Assets.xcassets */; };
 		D3631AC929EFE1C7009CB2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3631AC729EFE1C7009CB2FA /* LaunchScreen.storyboard */; };
+		D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */; };
+		D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */; };
+		D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD829EFE863009CB2FA /* R.generated.swift */; };
+		D3631ADB29EFE895009CB2FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3631ADA29EFE895009CB2FA /* Localizable.strings */; };
+		D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */; };
+		D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AE029EFF35C009CB2FA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.release.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.release.xcconfig"; sourceTree = "<group>"; };
+		BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.debug.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D3631AB929EFE1C6009CB2FA /* AlifiOSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlifiOSTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3631ABC29EFE1C6009CB2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3631ABE29EFE1C6009CB2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3631AC029EFE1C6009CB2FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3631AC529EFE1C7009CB2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3631AC829EFE1C7009CB2FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3631ACA29EFE1C7009CB2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUIView.swift; sourceTree = "<group>"; };
+		D3631AD829EFE863009CB2FA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		D3631ADA29EFE895009CB2FA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		D3631AE029EFF35C009CB2FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlifiOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32436D4C069D5E3507FAF1A /* Pods_AlifiOSTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1E5A86892D2A44104671A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DCEB3C14CBB03275E0ACF68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */,
+				5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3631AB029EFE1C6009CB2FA = {
 			isa = PBXGroup;
 			children = (
 				D3631ABB29EFE1C6009CB2FA /* AlifiOSTask */,
 				D3631ABA29EFE1C6009CB2FA /* Products */,
+				6DCEB3C14CBB03275E0ACF68 /* Pods */,
+				0B1E5A86892D2A44104671A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D3631AD029EFE277009CB2FA /* Common */,
-				D3631AC029EFE1C6009CB2FA /* ViewController.swift */,
+				D3631AD229EFE6E5009CB2FA /* ToDoList */,
 			);
 			path = AlifiOSTask;
 			sourceTree = "<group>";
@@ -63,6 +97,7 @@
 		D3631AD029EFE277009CB2FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D3631ADF29EFF34E009CB2FA /* Utils */,
 				D3631AD129EFE282009CB2FA /* Resources */,
 				D3631ABC29EFE1C6009CB2FA /* AppDelegate.swift */,
 				D3631ABE29EFE1C6009CB2FA /* SceneDelegate.swift */,
@@ -76,8 +111,36 @@
 			isa = PBXGroup;
 			children = (
 				D3631AC529EFE1C7009CB2FA /* Assets.xcassets */,
+				D3631AD829EFE863009CB2FA /* R.generated.swift */,
+				D3631ADA29EFE895009CB2FA /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3631AD229EFE6E5009CB2FA /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				D3631ADC29EFEDD6009CB2FA /* Cell */,
+				D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */,
+				D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		D3631ADC29EFEDD6009CB2FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D3631ADF29EFF34E009CB2FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AE029EFF35C009CB2FA /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3631ACD29EFE1C7009CB2FA /* Build configuration list for PBXNativeTarget "AlifiOSTask" */;
 			buildPhases = (
+				67A85B59B6ED72343CCD129F /* [CP] Check Pods Manifest.lock */,
+				D3631AD729EFE7AA009CB2FA /* R.swift script */,
 				D3631AB529EFE1C6009CB2FA /* Sources */,
 				D3631AB629EFE1C6009CB2FA /* Frameworks */,
 				D3631AB729EFE1C6009CB2FA /* Resources */,
+				2B9B28FB19AA71CC6A798E5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,20 +205,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3631AC929EFE1C7009CB2FA /* LaunchScreen.storyboard in Resources */,
+				D3631ADB29EFE895009CB2FA /* Localizable.strings in Resources */,
 				D3631AC629EFE1C7009CB2FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B9B28FB19AA71CC6A798E5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A85B59B6ED72343CCD129F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlifiOSTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3631AD729EFE7AA009CB2FA /* R.swift script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "R.swift script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/AlifiOSTask/Common/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/AlifiOSTask/Common/Resources/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3631AB529EFE1C6009CB2FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3631AC129EFE1C6009CB2FA /* ViewController.swift in Sources */,
 				D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */,
+				D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */,
+				D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */,
+				D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */,
+				D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */,
 				D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */,
+				D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +419,7 @@
 		};
 		D3631ACE29EFE1C7009CB2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +432,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +448,7 @@
 		};
 		D3631ACF29EFE1C7009CB2FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +461,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
