@@ -17,6 +17,7 @@ target 'AlifiOSTask' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'R.swift'
   pod 'JGProgressHUD'
+  pod 'RealmSwift', '~>10'
 
   # Pods for AlifiOSTask
 
