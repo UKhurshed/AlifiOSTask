@@ -18,6 +18,18 @@
 		D3631ADB29EFE895009CB2FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3631ADA29EFE895009CB2FA /* Localizable.strings */; };
 		D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */; };
 		D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AE029EFF35C009CB2FA /* Extensions.swift */; };
+		D3631AE429F0545A009CB2FA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AE329F05459009CB2FA /* StorageManager.swift */; };
+		D3631AEB29F055E7009CB2FA /* LoggedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AEA29F055E7009CB2FA /* LoggedStatus.swift */; };
+		D3631AED29F05AB8009CB2FA /* AuthUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AEC29F05AB8009CB2FA /* AuthUIView.swift */; };
+		D3631AEF29F05ACC009CB2FA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AEE29F05ACC009CB2FA /* AuthViewController.swift */; };
+		D3631AF229F05E96009CB2FA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AF129F05E96009CB2FA /* ProfileViewController.swift */; };
+		D3631AF429F05EA5009CB2FA /* ProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AF329F05EA5009CB2FA /* ProfileUIView.swift */; };
+		D3631AF729F060AF009CB2FA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AF629F060AF009CB2FA /* TabBarViewController.swift */; };
+		D3631AFA29F092E2009CB2FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AF929F092E2009CB2FA /* User.swift */; };
+		D3631AFE29F096B6009CB2FA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AFD29F096B6009CB2FA /* LoginService.swift */; };
+		D3631B0029F09726009CB2FA /* UserAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AFF29F09726009CB2FA /* UserAuthorization.swift */; };
+		D3631B0229F09845009CB2FA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631B0129F09845009CB2FA /* CustomError.swift */; };
+		D3631B0429F09B1C009CB2FA /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +47,18 @@
 		D3631ADA29EFE895009CB2FA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		D3631AE029EFF35C009CB2FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D3631AE329F05459009CB2FA /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D3631AEA29F055E7009CB2FA /* LoggedStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedStatus.swift; sourceTree = "<group>"; };
+		D3631AEC29F05AB8009CB2FA /* AuthUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIView.swift; sourceTree = "<group>"; };
+		D3631AEE29F05ACC009CB2FA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D3631AF129F05E96009CB2FA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D3631AF329F05EA5009CB2FA /* ProfileUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIView.swift; sourceTree = "<group>"; };
+		D3631AF629F060AF009CB2FA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D3631AF929F092E2009CB2FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3631AFD29F096B6009CB2FA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		D3631AFF29F09726009CB2FA /* UserAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorization.swift; sourceTree = "<group>"; };
+		D3631B0129F09845009CB2FA /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlifiOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				D3631AD029EFE277009CB2FA /* Common */,
+				D3631AE229F05438009CB2FA /* Managers */,
+				D3631AE829F055C7009CB2FA /* Auth */,
+				D3631AF529F06084009CB2FA /* TabBar */,
 				D3631AD229EFE6E5009CB2FA /* ToDoList */,
+				D3631AF829F070FB009CB2FA /* AddNewToDo */,
+				D3631AF029F05E48009CB2FA /* Profile */,
 			);
 			path = AlifiOSTask;
 			sourceTree = "<group>";
@@ -120,6 +149,9 @@
 		D3631AD229EFE6E5009CB2FA /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				D3631AE729F055B4009CB2FA /* Models */,
+				D3631AE629F0556E009CB2FA /* Services */,
+				D3631AE529F05555009CB2FA /* Domain */,
 				D3631ADC29EFEDD6009CB2FA /* Cell */,
 				D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */,
 				D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */,
@@ -139,8 +171,100 @@
 			isa = PBXGroup;
 			children = (
 				D3631AE029EFF35C009CB2FA /* Extensions.swift */,
+				D3631B0129F09845009CB2FA /* CustomError.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D3631AE229F05438009CB2FA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AE329F05459009CB2FA /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D3631AE529F05555009CB2FA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3631AE629F0556E009CB2FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3631AE729F055B4009CB2FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3631AE829F055C7009CB2FA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AE929F055D3009CB2FA /* Model */,
+				D3631AFC29F09650009CB2FA /* Services */,
+				D3631AFB29F09648009CB2FA /* Domain */,
+				D3631AEC29F05AB8009CB2FA /* AuthUIView.swift */,
+				D3631AEE29F05ACC009CB2FA /* AuthViewController.swift */,
+				D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D3631AE929F055D3009CB2FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AEA29F055E7009CB2FA /* LoggedStatus.swift */,
+				D3631AF929F092E2009CB2FA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3631AF029F05E48009CB2FA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AF129F05E96009CB2FA /* ProfileViewController.swift */,
+				D3631AF329F05EA5009CB2FA /* ProfileUIView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D3631AF529F06084009CB2FA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AF629F060AF009CB2FA /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D3631AF829F070FB009CB2FA /* AddNewToDo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddNewToDo;
+			sourceTree = "<group>";
+		};
+		D3631AFB29F09648009CB2FA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AFF29F09726009CB2FA /* UserAuthorization.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3631AFC29F09650009CB2FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3631AFD29F096B6009CB2FA /* LoginService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,13 +403,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3631AEF29F05ACC009CB2FA /* AuthViewController.swift in Sources */,
+				D3631B0429F09B1C009CB2FA /* AuthPresenter.swift in Sources */,
 				D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */,
 				D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */,
 				D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */,
+				D3631AF729F060AF009CB2FA /* TabBarViewController.swift in Sources */,
+				D3631B0229F09845009CB2FA /* CustomError.swift in Sources */,
+				D3631AF429F05EA5009CB2FA /* ProfileUIView.swift in Sources */,
 				D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */,
+				D3631AFE29F096B6009CB2FA /* LoginService.swift in Sources */,
+				D3631AED29F05AB8009CB2FA /* AuthUIView.swift in Sources */,
+				D3631AFA29F092E2009CB2FA /* User.swift in Sources */,
+				D3631AF229F05E96009CB2FA /* ProfileViewController.swift in Sources */,
+				D3631B0029F09726009CB2FA /* UserAuthorization.swift in Sources */,
+				D3631AEB29F055E7009CB2FA /* LoggedStatus.swift in Sources */,
 				D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */,
 				D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */,
 				D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */,
+				D3631AE429F0545A009CB2FA /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

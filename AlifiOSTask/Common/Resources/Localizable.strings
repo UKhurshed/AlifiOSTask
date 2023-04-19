@@ -8,3 +8,14 @@
 
 
 "appName" = "AlifiOSTask";
+
+"logIn" = "Log In";
+"yourName" = "Name:";
+
+"userName" = "User name:";
+"password" = "Password";
+"email" = "Email:";
+
+"warning" = "Warning";
+"emptyTextField" = "Оne of the fields is empty, please fill in all the fields";
+"realmInstanceNotExisting" = "Realm instance was nil";

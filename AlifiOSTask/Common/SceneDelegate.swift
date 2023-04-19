@@ -20,10 +20,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = ToDoListViewController()
-        vc.navigationItem.backButtonTitle = ""
-        let nav = UINavigationController(rootViewController: vc)
-        window.rootViewController = nav
+        guard let realm = StorageManager.shared.realm else {
+            let authVC = AuthViewController()
+            window.rootViewController = authVC
+            window.makeKeyAndVisible()
+            self.window = window
+            return
+        }
+        
+        let logged = realm.objects(LoggedStatus.self)
+       
+        if logged.isEmpty || !(logged.first?.status ?? false)  {
+            let authVC = AuthViewController()
+            window.rootViewController = authVC
+        } else {
+            window.rootViewController = TabBarViewController()
+        }
+    
         window.makeKeyAndVisible()
         self.window = window
         

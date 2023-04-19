@@ -18,6 +18,7 @@ target 'AlifiOSTask' do
   pod 'R.swift'
   pod 'JGProgressHUD'
   pod 'RealmSwift', '~>10'
+  pod 'IQKeyboardManagerSwift'
 
   # Pods for AlifiOSTask
 
