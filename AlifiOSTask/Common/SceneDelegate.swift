@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -28,10 +29,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
         let logged = realm.objects(LoggedStatus.self)
        
         if logged.isEmpty || !(logged.first?.status ?? false)  {
-            let authVC = AuthViewController()
+            let authVC = UsersAssembly.configureModule()
             window.rootViewController = authVC
         } else {
             window.rootViewController = TabBarViewController()

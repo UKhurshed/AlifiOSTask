@@ -9,10 +9,12 @@ import Foundation
 import RealmSwift
 
 class LoggedStatus: Object {
+    @Persisted var name: String
     @Persisted var status: Bool
     
-    static func create(status: Bool) -> LoggedStatus {
+    static func create(name: String, status: Bool) -> LoggedStatus {
         let loggedStatus = LoggedStatus()
+        loggedStatus.name = name
         loggedStatus.status = status
         return loggedStatus
     }

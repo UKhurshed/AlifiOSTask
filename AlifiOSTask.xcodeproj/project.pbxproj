@@ -30,6 +30,11 @@
 		D3631B0029F09726009CB2FA /* UserAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AFF29F09726009CB2FA /* UserAuthorization.swift */; };
 		D3631B0229F09845009CB2FA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631B0129F09845009CB2FA /* CustomError.swift */; };
 		D3631B0429F09B1C009CB2FA /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */; };
+		D3819AB129F13F4000832CFC /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB029F13F4000832CFC /* AuthAssembly.swift */; };
+		D3819AB329F149EA00832CFC /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB229F149EA00832CFC /* ProfileAssembly.swift */; };
+		D3819AB729F14A9F00832CFC /* AuthManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB629F14A9F00832CFC /* AuthManaging.swift */; };
+		D3819AB929F14B1400832CFC /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB829F14B1400832CFC /* ProfileService.swift */; };
+		D3819AF029F1751F00832CFC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AEF29F1751F00832CFC /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,11 @@
 		D3631AFF29F09726009CB2FA /* UserAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorization.swift; sourceTree = "<group>"; };
 		D3631B0129F09845009CB2FA /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		D3819AB029F13F4000832CFC /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		D3819AB229F149EA00832CFC /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
+		D3819AB629F14A9F00832CFC /* AuthManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManaging.swift; sourceTree = "<group>"; };
+		D3819AB829F14B1400832CFC /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		D3819AEF29F1751F00832CFC /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlifiOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,6 +224,7 @@
 				D3631AEC29F05AB8009CB2FA /* AuthUIView.swift */,
 				D3631AEE29F05ACC009CB2FA /* AuthViewController.swift */,
 				D3631B0329F09B1C009CB2FA /* AuthPresenter.swift */,
+				D3819AB029F13F4000832CFC /* AuthAssembly.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -230,8 +241,12 @@
 		D3631AF029F05E48009CB2FA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D3819AB529F14A0A00832CFC /* Services */,
+				D3819AB429F149F800832CFC /* Domain */,
 				D3631AF129F05E96009CB2FA /* ProfileViewController.swift */,
 				D3631AF329F05EA5009CB2FA /* ProfileUIView.swift */,
+				D3819AB229F149EA00832CFC /* ProfileAssembly.swift */,
+				D3819AEF29F1751F00832CFC /* ProfilePresenter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -263,6 +278,22 @@
 			isa = PBXGroup;
 			children = (
 				D3631AFD29F096B6009CB2FA /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3819AB429F149F800832CFC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3819AB629F14A9F00832CFC /* AuthManaging.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3819AB529F14A0A00832CFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3819AB829F14B1400832CFC /* ProfileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -405,20 +436,25 @@
 			files = (
 				D3631AEF29F05ACC009CB2FA /* AuthViewController.swift in Sources */,
 				D3631B0429F09B1C009CB2FA /* AuthPresenter.swift in Sources */,
+				D3819AF029F1751F00832CFC /* ProfilePresenter.swift in Sources */,
 				D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */,
 				D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */,
 				D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */,
 				D3631AF729F060AF009CB2FA /* TabBarViewController.swift in Sources */,
 				D3631B0229F09845009CB2FA /* CustomError.swift in Sources */,
 				D3631AF429F05EA5009CB2FA /* ProfileUIView.swift in Sources */,
+				D3819AB929F14B1400832CFC /* ProfileService.swift in Sources */,
 				D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */,
 				D3631AFE29F096B6009CB2FA /* LoginService.swift in Sources */,
 				D3631AED29F05AB8009CB2FA /* AuthUIView.swift in Sources */,
+				D3819AB729F14A9F00832CFC /* AuthManaging.swift in Sources */,
 				D3631AFA29F092E2009CB2FA /* User.swift in Sources */,
 				D3631AF229F05E96009CB2FA /* ProfileViewController.swift in Sources */,
 				D3631B0029F09726009CB2FA /* UserAuthorization.swift in Sources */,
+				D3819AB129F13F4000832CFC /* AuthAssembly.swift in Sources */,
 				D3631AEB29F055E7009CB2FA /* LoggedStatus.swift in Sources */,
 				D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */,
+				D3819AB329F149EA00832CFC /* ProfileAssembly.swift in Sources */,
 				D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */,
 				D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */,
 				D3631AE429F0545A009CB2FA /* StorageManager.swift in Sources */,

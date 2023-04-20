@@ -9,7 +9,7 @@ import UIKit
 import JGProgressHUD
 
 protocol AuthUIViewDelegate: AnyObject {
-    func logIn(name: String, email: String, password: String)
+    func logIn(name: String, password: String)
 }
 
 class AuthUIView: UIView {
@@ -19,7 +19,6 @@ class AuthUIView: UIView {
     private let stackView = UIStackView()
     private let logInTitle = UILabel()
     private let nameTextField = UITextField()
-    private let emailTextField = UITextField()
     private let passwordTextField = UITextField()
     private let logInBtn = UIButton()
     private let spinner = JGProgressHUD(style: .dark)
@@ -35,7 +34,6 @@ class AuthUIView: UIView {
         initStackView()
         initLogInTitle()
         initNameTextField()
-        initEmailTextField()
         initPasswordTextField()
         initLogInBtn()
     }
@@ -110,27 +108,6 @@ class AuthUIView: UIView {
         }
     }
     
-    private func initEmailTextField() {
-        emailTextField.translatesAutoresizingMaskIntoConstraints = false
-        emailTextField.placeholder = R.string.localizable.email()
-        let padding = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
-        emailTextField.leftView = padding
-        emailTextField.leftViewMode = .always
-        emailTextField.layer.borderWidth = 1.0
-        emailTextField.layer.borderColor = UIColor.systemGray4.cgColor
-        emailTextField.layer.cornerRadius = 10
-//        emailTextField.delegate = self
-        emailTextField.resignFirstResponder()
-        emailTextField.keyboardType = .default
-        
-        stackView.addArrangedSubview(emailTextField)
-        emailTextField.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(15)
-            make.trailing.equalToSuperview().offset(-15)
-            make.height.equalTo(50)
-        }
-    }
-    
     private func initPasswordTextField() {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.placeholder = R.string.localizable.password()
@@ -171,7 +148,7 @@ class AuthUIView: UIView {
     }
     
     @objc private func logInTapped() {
-        delegate?.logIn(name: nameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        delegate?.logIn(name: nameTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     required init?(coder: NSCoder) {

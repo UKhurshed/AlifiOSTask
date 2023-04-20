@@ -10,6 +10,7 @@ import Foundation
 enum CustomError: Error {
     case textFieldsEmpty
     case realmInstanceNotExisting
+    case userNotExisting
 }
 
 
@@ -20,6 +21,8 @@ extension CustomError: LocalizedError {
             return R.string.localizable.emptyTextField()
         case .realmInstanceNotExisting:
             return R.string.localizable.realmInstanceNotExisting()
+        case .userNotExisting:
+            return R.string.localizable.userNotExisting()
         }
     }
 }

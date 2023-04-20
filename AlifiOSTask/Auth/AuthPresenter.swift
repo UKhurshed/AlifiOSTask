@@ -11,7 +11,7 @@ protocol AuthViewInput {
     func logInUser(user: UserViewInput)
 }
 
-protocol DisplayLogic: AnyObject {
+protocol AuthDisplayLogic: AnyObject {
     func showLoader()
     func hideLoader()
     func success()
@@ -20,13 +20,15 @@ protocol DisplayLogic: AnyObject {
 
 class AuthPresenter: AuthViewInput {
     
-    weak var viewController: DisplayLogic?
+    weak var viewController: AuthDisplayLogic?
     var userAuthorization: UserAuthorization!
     
     func logInUser(user: UserViewInput) {
         viewController?.showLoader()
         do {
-            viewController?.hideLoader()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.viewController?.hideLoader()
+            }
             try userAuthorization.userAuth(user: user)
             viewController?.success()
         } catch {

@@ -9,6 +9,8 @@ import UIKit
 
 class AuthViewController: UIViewController {
     
+    var authPresenter: AuthPresenter!
+    
     private var authUIView: AuthUIView {
         self.view as! AuthUIView
     }
@@ -16,7 +18,7 @@ class AuthViewController: UIViewController {
     override func loadView() {
         view = AuthUIView()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         authUIView.delegate = self
@@ -24,10 +26,9 @@ class AuthViewController: UIViewController {
 }
 
 extension AuthViewController: AuthUIViewDelegate {
-    func logIn(name: String, email: String, password: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            
-        }
+    func logIn(name: String, password: String) {
+        authPresenter.logInUser(user: UserViewInput(name: name, password: password))
+        
     }
     
     func showAlert(title: String, message: String) {
@@ -36,4 +37,37 @@ extension AuthViewController: AuthUIViewDelegate {
         alert.addAction(cancel)
         present(alert, animated: true)
     }
+}
+
+extension AuthViewController: AuthDisplayLogic {
+    func showLoader() {
+        DispatchQueue.main.async {
+            self.view.isUserInteractionEnabled = false
+            self.authUIView.showLoader()
+        }
+    }
+    
+    func hideLoader() {
+        DispatchQueue.main.async {
+            self.view.isUserInteractionEnabled = false
+            self.authUIView.hideLoader()
+        }
+    }
+    
+    func success() {
+        let vc = TabBarViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
+    func showError(errorMessage: String) {
+        DispatchQueue.main.async {
+            self.authUIView.hideLoader()
+            let alert  = UIAlertController(title: R.string.localizable.errorOccurred(), message: errorMessage, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: R.string.localizable.dismiss(), style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
+    
+    
 }
