@@ -10,10 +10,12 @@ import Foundation
 protocol ProfileViewInput {
     func logOut()
     func deleteAccount()
+    func showUserInfo()
 }
 
 protocol ProfileDisplayLogic: AnyObject {
     func success()
+    func success(userName: String)
     func showError(errorMessage: String)
 }
 
@@ -36,6 +38,15 @@ class ProfilePresenter: ProfileViewInput {
         do {
             try authManaging.deleteAccount()
             viewController?.success()
+        } catch {
+            viewController?.showError(errorMessage: error.localizedDescription)
+        }
+    }
+    
+    func showUserInfo() {
+        do {
+            let userName = try authManaging.showUserInfo()
+            viewController?.success(userName: userName)
         } catch {
             viewController?.showError(errorMessage: error.localizedDescription)
         }

@@ -26,9 +26,9 @@ class AuthViewController: UIViewController {
 }
 
 extension AuthViewController: AuthUIViewDelegate {
-    func logIn(name: String, password: String) {
-        authPresenter.logInUser(user: UserViewInput(name: name, password: password))
-        
+    func logIn(email: String, password: String) {
+        print("name: \(email) password: \(password)")
+        authPresenter.logInUser(user: UserViewInput(email: email, password: password))
     }
     
     func showAlert(title: String, message: String) {

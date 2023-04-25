@@ -33,7 +33,7 @@ class ProfileServiceImpl: ProfileService {
         let loggedStatus = realm.objects(LoggedStatus.self)
         let users = realm.objects(User.self)
         
-        guard let loggedUser = loggedStatus.first(where: { $0.status }), let user = users.first(where: { $0.name == loggedUser.name}) else {
+        guard let loggedUser = loggedStatus.first(where: { $0.status }), let user = users.first(where: { $0.email == loggedUser.email}) else {
             throw CustomError.userNotExisting
         }
         
@@ -41,5 +41,19 @@ class ProfileServiceImpl: ProfileService {
             realm.delete(loggedUser)
             realm.delete(user)
         }
+    }
+    
+    func showUserInfo() throws -> String {
+        guard let realm = StorageManager.shared.realm else {
+            throw CustomError.realmInstanceNotExisting
+        }
+        
+        let logged = realm.objects(LoggedStatus.self)
+        for log in logged {
+            if log.status {
+                return log.email
+            }
+        }
+        return ""
     }
 }

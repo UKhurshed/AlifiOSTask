@@ -23,11 +23,13 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         profileUIView.delegate = self
+        profileInputView.showUserInfo()
     }
     
 }
 
 extension ProfileViewController: ProfileUIViewDelegate {
+    
     func logOut() {
         profileInputView.logOut()
     }
@@ -40,7 +42,7 @@ extension ProfileViewController: ProfileUIViewDelegate {
 extension ProfileViewController: ProfileDisplayLogic {
     
     func success() {
-        let authVC = AuthViewController()
+        let authVC = AuthAssembly.configureModule()
         authVC.modalPresentationStyle = .fullScreen
         self.present(authVC, animated: true)
     }
@@ -55,5 +57,9 @@ extension ProfileViewController: ProfileDisplayLogic {
             })
             self.present(alert, animated: true)
         }
+    }
+    
+    func success(userName: String) {
+        profileUIView.setupData(name: userName)
     }
 }

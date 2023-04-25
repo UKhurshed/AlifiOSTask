@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,24 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        guard let realm = StorageManager.shared.realm else {
-            let authVC = AuthViewController()
-            window.rootViewController = authVC
-            window.makeKeyAndVisible()
-            self.window = window
-            return
-        }
-        
 //        print(Realm.Configuration.defaultConfiguration.fileURL)
         
-        let logged = realm.objects(LoggedStatus.self)
-       
-        if logged.isEmpty || !(logged.first?.status ?? false)  {
-            let authVC = UsersAssembly.configureModule()
-            window.rootViewController = authVC
-        } else {
-            window.rootViewController = TabBarViewController()
-        }
+        window.rootViewController = AuthChecking.check()
     
         window.makeKeyAndVisible()
         self.window = window

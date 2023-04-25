@@ -9,7 +9,7 @@ import UIKit
 import JGProgressHUD
 
 protocol AuthUIViewDelegate: AnyObject {
-    func logIn(name: String, password: String)
+    func logIn(email: String, password: String)
 }
 
 class AuthUIView: UIView {
@@ -18,7 +18,7 @@ class AuthUIView: UIView {
     private let contentView = UIView()
     private let stackView = UIStackView()
     private let logInTitle = UILabel()
-    private let nameTextField = UITextField()
+    private let emailTextField = UITextField()
     private let passwordTextField = UITextField()
     private let logInBtn = UIButton()
     private let spinner = JGProgressHUD(style: .dark)
@@ -33,7 +33,7 @@ class AuthUIView: UIView {
         initContentView()
         initStackView()
         initLogInTitle()
-        initNameTextField()
+        initEmailTextField()
         initPasswordTextField()
         initLogInBtn()
     }
@@ -87,21 +87,21 @@ class AuthUIView: UIView {
         }
     }
     
-    private func initNameTextField() {
-        nameTextField.translatesAutoresizingMaskIntoConstraints = false
-        nameTextField.placeholder = R.string.localizable.yourName()
-        let padding = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.nameTextField.frame.height))
-        nameTextField.leftView = padding
-        nameTextField.leftViewMode = .always
-        nameTextField.layer.borderWidth = 1.0
-        nameTextField.layer.borderColor = UIColor.systemGray4.cgColor
-        nameTextField.layer.cornerRadius = 10
+    private func initEmailTextField() {
+        emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        emailTextField.placeholder = R.string.localizable.yourName()
+        let padding = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
+        emailTextField.leftView = padding
+        emailTextField.leftViewMode = .always
+        emailTextField.layer.borderWidth = 1.0
+        emailTextField.layer.borderColor = UIColor.systemGray4.cgColor
+        emailTextField.layer.cornerRadius = 10
 //        nameTextField.delegate = self
-        nameTextField.resignFirstResponder()
-        nameTextField.keyboardType = .default
+        emailTextField.resignFirstResponder()
+        emailTextField.keyboardType = .default
         
-        stackView.addArrangedSubview(nameTextField)
-        nameTextField.snp.makeConstraints { make in
+        stackView.addArrangedSubview(emailTextField)
+        emailTextField.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(15)
             make.trailing.equalToSuperview().offset(-15)
             make.height.equalTo(50)
@@ -148,7 +148,7 @@ class AuthUIView: UIView {
     }
     
     @objc private func logInTapped() {
-        delegate?.logIn(name: nameTextField.text ?? "", password: passwordTextField.text ?? "")
+        delegate?.logIn(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     required init?(coder: NSCoder) {

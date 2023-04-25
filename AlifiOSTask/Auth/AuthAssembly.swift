@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UsersAssembly {
+class AuthAssembly {
     static func configureModule() -> UIViewController {
         let view = AuthViewController()
         let service = LogInServiceImpl()

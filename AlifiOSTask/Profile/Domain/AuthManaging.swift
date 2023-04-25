@@ -10,11 +10,13 @@ import Foundation
 protocol AuthManaging {
     func logOut() throws
     func deleteAccount() throws
+    func showUserInfo() throws -> String
 }
 
 protocol ProfileService: AnyObject {
     func logOut() throws
     func deleteAccount() throws
+    func showUserInfo() throws -> String
 }
 
 
@@ -32,5 +34,9 @@ class AuthManagingImpl: AuthManaging {
     
     func deleteAccount() throws {
         try profileService.deleteAccount()
+    }
+    
+    func showUserInfo() throws -> String {
+       return try profileService.showUserInfo()
     }
 }

@@ -26,12 +26,11 @@ class AuthPresenter: AuthViewInput {
     func logInUser(user: UserViewInput) {
         viewController?.showLoader()
         do {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.viewController?.hideLoader()
-            }
+            self.viewController?.hideLoader()
             try userAuthorization.userAuth(user: user)
             viewController?.success()
         } catch {
+            print("AuthPresenter error: \(error.localizedDescription)")
             viewController?.showError(errorMessage: error.localizedDescription)
         }
     }

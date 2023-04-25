@@ -7,7 +7,7 @@
 */
 
 
-"appName" = "AlifiOSTask";
+"appName" = "To Do List";
 
 "logIn" = "Log In";
 "yourName" = "Name:";
@@ -15,6 +15,7 @@
 "userName" = "User name:";
 "password" = "Password";
 "email" = "Email:";
+"userEmail" = "User Email:";
 
 "warning" = "Warning";
 "emptyTextField" = "Оne of the fields is empty, please fill in all the fields";
@@ -23,3 +24,21 @@
 
 "errorOccurred" = "An error occurred";
 "dismiss" = "Dismiss";
+
+"textFieldDescription" = "New task description";
+"priority" = "Priority";
+
+"addTask" = "Add new task";
+"high" = "High";
+"normal" = "Normal";
+"low" = "Low";
+
+"noteEmptyWarning" = "Note is empty";
+"userStatusNotFound" = "User status is not found";
+"userNotFound" = "User is not found";
+"taskNotFound" = "Task not found";
+
+"delete" = "Delete";
+"edit" = "Edit";
+
+"editTask" = "Edit Task";

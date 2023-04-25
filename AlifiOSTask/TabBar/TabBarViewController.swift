@@ -12,8 +12,8 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let toDoVC = ToDoListViewController()
-        let profileVC = ProfileViewController()
+        let toDoVC = GetTasksAssembly.configureModule()
+        let profileVC = ProfileAssembly.configure()
         
         toDoVC.navigationItem.backButtonTitle = ""
         profileVC.navigationItem.backButtonTitle = ""
@@ -33,12 +33,6 @@ class TabBarViewController: UITabBarController {
         navToDo.navigationBar.prefersLargeTitles = true
         navProfile.navigationBar.prefersLargeTitles = true
     
-        setViewControllers([navToDo, navProfile], animated: false)
-        
-        
-        tabBar.layer.insertSublayer(CAShapeLayer(), at: 0)
-        
+        setViewControllers([navToDo, navProfile], animated: false) 
     }
-
-
 }

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A32436D4C069D5E3507FAF1A /* Pods_AlifiOSTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */; };
+		68E60FB7533777DF480468DA /* Pods_AlifiOSTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB29281A7028126269603B6 /* Pods_AlifiOSTask.framework */; };
 		D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ABC29EFE1C6009CB2FA /* AppDelegate.swift */; };
 		D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ABE29EFE1C6009CB2FA /* SceneDelegate.swift */; };
 		D3631AC629EFE1C7009CB2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3631AC529EFE1C7009CB2FA /* Assets.xcassets */; };
 		D3631AC929EFE1C7009CB2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3631AC729EFE1C7009CB2FA /* LaunchScreen.storyboard */; };
-		D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */; };
-		D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */; };
+		D3631AD429EFE71A009CB2FA /* GetTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD329EFE71A009CB2FA /* GetTasksViewController.swift */; };
+		D3631AD629EFE73C009CB2FA /* GetTasksUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD529EFE73C009CB2FA /* GetTasksUIView.swift */; };
 		D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631AD829EFE863009CB2FA /* R.generated.swift */; };
 		D3631ADB29EFE895009CB2FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3631ADA29EFE895009CB2FA /* Localizable.strings */; };
 		D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */; };
@@ -35,19 +35,37 @@
 		D3819AB729F14A9F00832CFC /* AuthManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB629F14A9F00832CFC /* AuthManaging.swift */; };
 		D3819AB929F14B1400832CFC /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AB829F14B1400832CFC /* ProfileService.swift */; };
 		D3819AF029F1751F00832CFC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3819AEF29F1751F00832CFC /* ProfilePresenter.swift */; };
+		D3B19C2629F7952300051C17 /* GetTasksAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C2529F7952300051C17 /* GetTasksAssembly.swift */; };
+		D3B19C2829F7952F00051C17 /* GetTasksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C2729F7952F00051C17 /* GetTasksPresenter.swift */; };
+		D3B19C2A29F7956400051C17 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C2929F7956400051C17 /* AddTaskViewController.swift */; };
+		D3B19C2C29F7957200051C17 /* AddTaskUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C2B29F7957200051C17 /* AddTaskUIView.swift */; };
+		D3B19C3229F7ADBD00051C17 /* AddTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3129F7ADBD00051C17 /* AddTaskService.swift */; };
+		D3B19C3429F7ADCA00051C17 /* AddUserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3329F7ADCA00051C17 /* AddUserTask.swift */; };
+		D3B19C3629F7B72100051C17 /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3529F7B72100051C17 /* AddTaskPresenter.swift */; };
+		D3B19C3829F7B8EB00051C17 /* AddTaskAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3729F7B8EB00051C17 /* AddTaskAssembly.swift */; };
+		D3B19C3A29F7BD1F00051C17 /* GetCurrentUserTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3929F7BD1F00051C17 /* GetCurrentUserTasks.swift */; };
+		D3B19C3C29F7BD8D00051C17 /* GetUserTasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3B29F7BD8D00051C17 /* GetUserTasksService.swift */; };
+		D3B19C3E29F7C0F100051C17 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C3D29F7C0F100051C17 /* UserViewModel.swift */; };
+		D3B19C4129F8009600051C17 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4029F8009600051C17 /* EditTaskViewController.swift */; };
+		D3B19C4329F800A400051C17 /* EditTaskUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4229F800A400051C17 /* EditTaskUIView.swift */; };
+		D3B19C4729F8027A00051C17 /* EditTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4629F8027A00051C17 /* EditTaskService.swift */; };
+		D3B19C4929F8028700051C17 /* EditUserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4829F8028700051C17 /* EditUserTask.swift */; };
+		D3B19C4B29F8029100051C17 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4A29F8029100051C17 /* EditTaskPresenter.swift */; };
+		D3B19C4D29F8029D00051C17 /* EditTaskAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C4C29F8029D00051C17 /* EditTaskAssembly.swift */; };
+		D3B19C5129F8040D00051C17 /* EditTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B19C5029F8040D00051C17 /* EditTaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.release.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.release.xcconfig"; sourceTree = "<group>"; };
-		BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.debug.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.debug.xcconfig"; sourceTree = "<group>"; };
+		3DB29281A7028126269603B6 /* Pods_AlifiOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlifiOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C08C937A93F0D70505A0B74 /* Pods-AlifiOSTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.release.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.release.xcconfig"; sourceTree = "<group>"; };
 		D3631AB929EFE1C6009CB2FA /* AlifiOSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlifiOSTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3631ABC29EFE1C6009CB2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3631ABE29EFE1C6009CB2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D3631AC529EFE1C7009CB2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3631AC829EFE1C7009CB2FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3631ACA29EFE1C7009CB2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
-		D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUIView.swift; sourceTree = "<group>"; };
+		D3631AD329EFE71A009CB2FA /* GetTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasksViewController.swift; sourceTree = "<group>"; };
+		D3631AD529EFE73C009CB2FA /* GetTasksUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasksUIView.swift; sourceTree = "<group>"; };
 		D3631AD829EFE863009CB2FA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		D3631ADA29EFE895009CB2FA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D3631ADD29EFEDF4009CB2FA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,7 +87,25 @@
 		D3819AB629F14A9F00832CFC /* AuthManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManaging.swift; sourceTree = "<group>"; };
 		D3819AB829F14B1400832CFC /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		D3819AEF29F1751F00832CFC /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
-		EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlifiOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B19C2529F7952300051C17 /* GetTasksAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasksAssembly.swift; sourceTree = "<group>"; };
+		D3B19C2729F7952F00051C17 /* GetTasksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasksPresenter.swift; sourceTree = "<group>"; };
+		D3B19C2929F7956400051C17 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		D3B19C2B29F7957200051C17 /* AddTaskUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskUIView.swift; sourceTree = "<group>"; };
+		D3B19C3129F7ADBD00051C17 /* AddTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskService.swift; sourceTree = "<group>"; };
+		D3B19C3329F7ADCA00051C17 /* AddUserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserTask.swift; sourceTree = "<group>"; };
+		D3B19C3529F7B72100051C17 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
+		D3B19C3729F7B8EB00051C17 /* AddTaskAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskAssembly.swift; sourceTree = "<group>"; };
+		D3B19C3929F7BD1F00051C17 /* GetCurrentUserTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentUserTasks.swift; sourceTree = "<group>"; };
+		D3B19C3B29F7BD8D00051C17 /* GetUserTasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserTasksService.swift; sourceTree = "<group>"; };
+		D3B19C3D29F7C0F100051C17 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		D3B19C4029F8009600051C17 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		D3B19C4229F800A400051C17 /* EditTaskUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskUIView.swift; sourceTree = "<group>"; };
+		D3B19C4629F8027A00051C17 /* EditTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskService.swift; sourceTree = "<group>"; };
+		D3B19C4829F8028700051C17 /* EditUserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserTask.swift; sourceTree = "<group>"; };
+		D3B19C4A29F8029100051C17 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
+		D3B19C4C29F8029D00051C17 /* EditTaskAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskAssembly.swift; sourceTree = "<group>"; };
+		D3B19C5029F8040D00051C17 /* EditTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskModel.swift; sourceTree = "<group>"; };
+		FA199FC6F65A9352EA3084CD /* Pods-AlifiOSTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlifiOSTask.debug.xcconfig"; path = "Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,28 +113,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32436D4C069D5E3507FAF1A /* Pods_AlifiOSTask.framework in Frameworks */,
+				68E60FB7533777DF480468DA /* Pods_AlifiOSTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B1E5A86892D2A44104671A1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EA3FA90A67465A398384FFA1 /* Pods_AlifiOSTask.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6DCEB3C14CBB03275E0ACF68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */,
-				5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */,
+				FA199FC6F65A9352EA3084CD /* Pods-AlifiOSTask.debug.xcconfig */,
+				9C08C937A93F0D70505A0B74 /* Pods-AlifiOSTask.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		799F15B541C4AD5CC20E162C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB29281A7028126269603B6 /* Pods_AlifiOSTask.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D3631AB029EFE1C6009CB2FA = {
@@ -107,7 +143,7 @@
 				D3631ABB29EFE1C6009CB2FA /* AlifiOSTask */,
 				D3631ABA29EFE1C6009CB2FA /* Products */,
 				6DCEB3C14CBB03275E0ACF68 /* Pods */,
-				0B1E5A86892D2A44104671A1 /* Frameworks */,
+				799F15B541C4AD5CC20E162C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +162,9 @@
 				D3631AE229F05438009CB2FA /* Managers */,
 				D3631AE829F055C7009CB2FA /* Auth */,
 				D3631AF529F06084009CB2FA /* TabBar */,
-				D3631AD229EFE6E5009CB2FA /* ToDoList */,
-				D3631AF829F070FB009CB2FA /* AddNewToDo */,
+				D3631AD229EFE6E5009CB2FA /* GetTasks */,
+				D3B19C3F29F8003600051C17 /* EditTask */,
+				D3631AF829F070FB009CB2FA /* AddTask */,
 				D3631AF029F05E48009CB2FA /* Profile */,
 			);
 			path = AlifiOSTask;
@@ -156,17 +193,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D3631AD229EFE6E5009CB2FA /* ToDoList */ = {
+		D3631AD229EFE6E5009CB2FA /* GetTasks */ = {
 			isa = PBXGroup;
 			children = (
-				D3631AE729F055B4009CB2FA /* Models */,
 				D3631AE629F0556E009CB2FA /* Services */,
 				D3631AE529F05555009CB2FA /* Domain */,
 				D3631ADC29EFEDD6009CB2FA /* Cell */,
-				D3631AD329EFE71A009CB2FA /* ToDoListViewController.swift */,
-				D3631AD529EFE73C009CB2FA /* ToDoListUIView.swift */,
+				D3631AD329EFE71A009CB2FA /* GetTasksViewController.swift */,
+				D3631AD529EFE73C009CB2FA /* GetTasksUIView.swift */,
+				D3B19C2529F7952300051C17 /* GetTasksAssembly.swift */,
+				D3B19C2729F7952F00051C17 /* GetTasksPresenter.swift */,
+				D3B19C3D29F7C0F100051C17 /* UserViewModel.swift */,
 			);
-			path = ToDoList;
+			path = GetTasks;
 			sourceTree = "<group>";
 		};
 		D3631ADC29EFEDD6009CB2FA /* Cell */ = {
@@ -197,6 +236,7 @@
 		D3631AE529F05555009CB2FA /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D3B19C3929F7BD1F00051C17 /* GetCurrentUserTasks.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -204,15 +244,9 @@
 		D3631AE629F0556E009CB2FA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D3B19C3B29F7BD8D00051C17 /* GetUserTasksService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		D3631AE729F055B4009CB2FA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D3631AE829F055C7009CB2FA /* Auth */ = {
@@ -259,11 +293,17 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		D3631AF829F070FB009CB2FA /* AddNewToDo */ = {
+		D3631AF829F070FB009CB2FA /* AddTask */ = {
 			isa = PBXGroup;
 			children = (
+				D3B19C3029F7AD9D00051C17 /* Service */,
+				D3B19C2F29F7AD9600051C17 /* Domain */,
+				D3B19C2929F7956400051C17 /* AddTaskViewController.swift */,
+				D3B19C2B29F7957200051C17 /* AddTaskUIView.swift */,
+				D3B19C3529F7B72100051C17 /* AddTaskPresenter.swift */,
+				D3B19C3729F7B8EB00051C17 /* AddTaskAssembly.swift */,
 			);
-			path = AddNewToDo;
+			path = AddTask;
 			sourceTree = "<group>";
 		};
 		D3631AFB29F09648009CB2FA /* Domain */ = {
@@ -298,6 +338,60 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D3B19C2F29F7AD9600051C17 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C3329F7ADCA00051C17 /* AddUserTask.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3B19C3029F7AD9D00051C17 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C3129F7ADBD00051C17 /* AddTaskService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D3B19C3F29F8003600051C17 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C4F29F8040000051C17 /* Model */,
+				D3B19C4529F8026600051C17 /* Services */,
+				D3B19C4429F8026100051C17 /* Domain */,
+				D3B19C4029F8009600051C17 /* EditTaskViewController.swift */,
+				D3B19C4229F800A400051C17 /* EditTaskUIView.swift */,
+				D3B19C4A29F8029100051C17 /* EditTaskPresenter.swift */,
+				D3B19C4C29F8029D00051C17 /* EditTaskAssembly.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		D3B19C4429F8026100051C17 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C4829F8028700051C17 /* EditUserTask.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3B19C4529F8026600051C17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C4629F8027A00051C17 /* EditTaskService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3B19C4F29F8040000051C17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3B19C5029F8040D00051C17 /* EditTaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,12 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3631ACD29EFE1C7009CB2FA /* Build configuration list for PBXNativeTarget "AlifiOSTask" */;
 			buildPhases = (
-				67A85B59B6ED72343CCD129F /* [CP] Check Pods Manifest.lock */,
+				0FBA626D35EE806C1B2C8429 /* [CP] Check Pods Manifest.lock */,
 				D3631AD729EFE7AA009CB2FA /* R.swift script */,
 				D3631AB529EFE1C6009CB2FA /* Sources */,
 				D3631AB629EFE1C6009CB2FA /* Frameworks */,
 				D3631AB729EFE1C6009CB2FA /* Resources */,
-				2B9B28FB19AA71CC6A798E5C /* [CP] Embed Pods Frameworks */,
+				C3FB8503C91BA270A8A1E3D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,24 +462,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B9B28FB19AA71CC6A798E5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67A85B59B6ED72343CCD129F /* [CP] Check Pods Manifest.lock */ = {
+		0FBA626D35EE806C1B2C8429 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,6 +482,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FB8503C91BA270A8A1E3D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlifiOSTask/Pods-AlifiOSTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3631AD729EFE7AA009CB2FA /* R.swift script */ = {
@@ -437,26 +531,44 @@
 				D3631AEF29F05ACC009CB2FA /* AuthViewController.swift in Sources */,
 				D3631B0429F09B1C009CB2FA /* AuthPresenter.swift in Sources */,
 				D3819AF029F1751F00832CFC /* ProfilePresenter.swift in Sources */,
+				D3B19C3229F7ADBD00051C17 /* AddTaskService.swift in Sources */,
+				D3B19C5129F8040D00051C17 /* EditTaskModel.swift in Sources */,
+				D3B19C4729F8027A00051C17 /* EditTaskService.swift in Sources */,
+				D3B19C3C29F7BD8D00051C17 /* GetUserTasksService.swift in Sources */,
 				D3631ABD29EFE1C6009CB2FA /* AppDelegate.swift in Sources */,
-				D3631AD429EFE71A009CB2FA /* ToDoListViewController.swift in Sources */,
+				D3631AD429EFE71A009CB2FA /* GetTasksViewController.swift in Sources */,
 				D3631AD929EFE863009CB2FA /* R.generated.swift in Sources */,
 				D3631AF729F060AF009CB2FA /* TabBarViewController.swift in Sources */,
+				D3B19C4D29F8029D00051C17 /* EditTaskAssembly.swift in Sources */,
 				D3631B0229F09845009CB2FA /* CustomError.swift in Sources */,
+				D3B19C2629F7952300051C17 /* GetTasksAssembly.swift in Sources */,
 				D3631AF429F05EA5009CB2FA /* ProfileUIView.swift in Sources */,
 				D3819AB929F14B1400832CFC /* ProfileService.swift in Sources */,
+				D3B19C3829F7B8EB00051C17 /* AddTaskAssembly.swift in Sources */,
+				D3B19C2C29F7957200051C17 /* AddTaskUIView.swift in Sources */,
 				D3631ADE29EFEDF4009CB2FA /* ToDoTableViewCell.swift in Sources */,
 				D3631AFE29F096B6009CB2FA /* LoginService.swift in Sources */,
 				D3631AED29F05AB8009CB2FA /* AuthUIView.swift in Sources */,
 				D3819AB729F14A9F00832CFC /* AuthManaging.swift in Sources */,
+				D3B19C4129F8009600051C17 /* EditTaskViewController.swift in Sources */,
 				D3631AFA29F092E2009CB2FA /* User.swift in Sources */,
+				D3B19C2A29F7956400051C17 /* AddTaskViewController.swift in Sources */,
+				D3B19C4329F800A400051C17 /* EditTaskUIView.swift in Sources */,
+				D3B19C4929F8028700051C17 /* EditUserTask.swift in Sources */,
 				D3631AF229F05E96009CB2FA /* ProfileViewController.swift in Sources */,
 				D3631B0029F09726009CB2FA /* UserAuthorization.swift in Sources */,
 				D3819AB129F13F4000832CFC /* AuthAssembly.swift in Sources */,
+				D3B19C3629F7B72100051C17 /* AddTaskPresenter.swift in Sources */,
 				D3631AEB29F055E7009CB2FA /* LoggedStatus.swift in Sources */,
-				D3631AD629EFE73C009CB2FA /* ToDoListUIView.swift in Sources */,
+				D3631AD629EFE73C009CB2FA /* GetTasksUIView.swift in Sources */,
 				D3819AB329F149EA00832CFC /* ProfileAssembly.swift in Sources */,
+				D3B19C2829F7952F00051C17 /* GetTasksPresenter.swift in Sources */,
+				D3B19C3A29F7BD1F00051C17 /* GetCurrentUserTasks.swift in Sources */,
+				D3B19C3429F7ADCA00051C17 /* AddUserTask.swift in Sources */,
+				D3B19C4B29F8029100051C17 /* EditTaskPresenter.swift in Sources */,
 				D3631ABF29EFE1C6009CB2FA /* SceneDelegate.swift in Sources */,
 				D3631AE129EFF35C009CB2FA /* Extensions.swift in Sources */,
+				D3B19C3E29F7C0F100051C17 /* UserViewModel.swift in Sources */,
 				D3631AE429F0545A009CB2FA /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +703,7 @@
 		};
 		D3631ACE29EFE1C7009CB2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED2B1B1EE1EF891B0C4D1E7 /* Pods-AlifiOSTask.debug.xcconfig */;
+			baseConfigurationReference = FA199FC6F65A9352EA3084CD /* Pods-AlifiOSTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -620,7 +732,7 @@
 		};
 		D3631ACF29EFE1C7009CB2FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C740DB89493AB77EBDF5F5B /* Pods-AlifiOSTask.release.xcconfig */;
+			baseConfigurationReference = 9C08C937A93F0D70505A0B74 /* Pods-AlifiOSTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

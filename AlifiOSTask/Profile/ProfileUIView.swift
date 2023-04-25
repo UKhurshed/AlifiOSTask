@@ -14,8 +14,8 @@ protocol ProfileUIViewDelegate: AnyObject {
 
 class ProfileUIView: UIView {
     
-    private let nameTitle = UILabel()
-    private let nameValue = UILabel()
+    private let emailTitle = UILabel()
+    private let emailValue = UILabel()
     private let logOutBtn = UIButton()
     private let deleteAccountBtn = UIButton()
     
@@ -32,26 +32,25 @@ class ProfileUIView: UIView {
     }
     
     private func initNameTitle() {
-        nameTitle.translatesAutoresizingMaskIntoConstraints = false
-        nameTitle.font = .systemFont(ofSize: 19, weight: .semibold)
-        nameTitle.text = R.string.localizable.userName()
+        emailTitle.translatesAutoresizingMaskIntoConstraints = false
+        emailTitle.font = .systemFont(ofSize: 19, weight: .semibold)
+        emailTitle.text = R.string.localizable.userName()
         
-        addSubview(nameTitle)
-        nameTitle.snp.makeConstraints { make in
+        addSubview(emailTitle)
+        emailTitle.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(50)
             make.leading.equalToSuperview().offset(15)
         }
     }
     
     private func initNameValue() {
-        nameValue.translatesAutoresizingMaskIntoConstraints = false
-        nameValue.font = .systemFont(ofSize: 18, weight: .medium)
-        nameValue.text = "Userov User"
+        emailValue.translatesAutoresizingMaskIntoConstraints = false
+        emailValue.font = .systemFont(ofSize: 18, weight: .medium)
         
-        addSubview(nameValue)
-        nameValue.snp.makeConstraints { make in
+        addSubview(emailValue)
+        emailValue.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(51)
-            make.leading.equalTo(nameTitle.snp.trailing).offset(7)
+            make.leading.equalTo(emailTitle.snp.trailing).offset(7)
         }
     }
     
@@ -67,7 +66,7 @@ class ProfileUIView: UIView {
         
         addSubview(logOutBtn)
         logOutBtn.snp.makeConstraints { make in
-            make.top.equalTo(nameValue.snp.bottom).offset(40)
+            make.top.equalTo(emailValue.snp.bottom).offset(40)
             make.leading.equalToSuperview().offset(25)
             make.height.equalTo(40)
             make.width.equalTo(110)
@@ -90,7 +89,7 @@ class ProfileUIView: UIView {
         
         addSubview(deleteAccountBtn)
         deleteAccountBtn.snp.makeConstraints { make in
-            make.top.equalTo(nameValue.snp.bottom).offset(40)
+            make.top.equalTo(emailValue.snp.bottom).offset(40)
             make.trailing.equalToSuperview().offset(-25)
             make.height.equalTo(40)
             make.width.equalTo(160)
@@ -106,7 +105,7 @@ class ProfileUIView: UIView {
     }
     
     public func setupData(name: String) {
-        nameValue.text = name
+        emailValue.text = name
     }
 
 }

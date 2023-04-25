@@ -9,12 +9,12 @@ import Foundation
 import RealmSwift
 
 class LoggedStatus: Object {
-    @Persisted var name: String
+    @Persisted var email: String
     @Persisted var status: Bool
     
-    static func create(name: String, status: Bool) -> LoggedStatus {
+    static func create(email: String, status: Bool) -> LoggedStatus {
         let loggedStatus = LoggedStatus()
-        loggedStatus.name = name
+        loggedStatus.email = email
         loggedStatus.status = status
         return loggedStatus
     }
